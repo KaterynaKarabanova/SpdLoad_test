@@ -35,7 +35,6 @@ const FlightCard: React.FC<FlightCardProps> = ({
     const newState = state.filter((el) => el.id !== id);
     setState(newState);
   };
-  console.log(state);
 
   return (
     <div id={id}>
