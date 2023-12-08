@@ -1,15 +1,32 @@
-import { NavLink } from "react-router-dom";
-
+import { NavigationDiv, StyledNsvLink } from "./Navigation.styled";
 const Navigation = () => {
   return (
-    <div>
-      <NavLink key={"/"} to={"/"}>
+    <NavigationDiv>
+      <StyledNsvLink key={"/"} to={"/"}>
         Home
-      </NavLink>
-      <NavLink key={"/favorites"} to={"/favorites"}>
-        Favorite
-      </NavLink>
-    </div>
+      </StyledNsvLink>
+      <StyledNsvLink
+        key={"/tours"}
+        to={"/tours"}
+        onClick={(e) => e.preventDefault()}
+      >
+        tours
+      </StyledNsvLink>
+      <StyledNsvLink
+        key={"/about"}
+        to={"/about"}
+        onClick={(e) => e.preventDefault()}
+      >
+        about
+      </StyledNsvLink>
+      <StyledNsvLink
+        key={"/help"}
+        to={"/help"}
+        onClick={(e) => e.preventDefault()}
+      >
+        help
+      </StyledNsvLink>
+    </NavigationDiv>
   );
 };
 export default Navigation;

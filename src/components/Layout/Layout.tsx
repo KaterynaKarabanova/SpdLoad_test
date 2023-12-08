@@ -2,12 +2,36 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navigation from "./Navigation";
 import { Suspense } from "react";
+import logo from "../assets/logo.jpg";
+import {
+  LayoutFlex,
+  LayoutHeader,
+  LayoutHeaderBack,
+  LayoutSignButton,
+} from "./Layout.styled";
+import { Container } from "../../pages/Home/Home.styled";
+import { StyledFavLink } from "./Navigation.styled";
 const Layout = () => {
   return (
     <main>
-      <div>
-        <Navigation />
-      </div>
+      <LayoutHeaderBack>
+        <Container>
+          <LayoutHeader>
+            <a href="/">
+              <img src={logo} alt="" />
+            </a>
+            <Navigation />
+            <LayoutFlex>
+              <StyledFavLink
+                key={"/favorites"}
+                to={"/favorites"}
+              ></StyledFavLink>
+              <LayoutSignButton>Sign in</LayoutSignButton>
+            </LayoutFlex>
+          </LayoutHeader>
+        </Container>
+      </LayoutHeaderBack>
+
       <div>
         <Suspense
           fallback={

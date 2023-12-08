@@ -1,9 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
+import arrowDown from "../../components/assets/arrowDown.svg";
 import heroImageOne from "../../components/assets/heroImage1.jpg";
 import heroImageTwo from "../../components/assets/heroImage2.jpg";
 import heroImageThree from "../../components/assets/heroImage3.jpg";
-import { CustomDotsListHero } from "./Hero.styled";
+import {
+  CustomDotsListHero,
+  HeroTextLink,
+  HeroTitleDiv,
+  HeroTitleLarge,
+  HeroTitleSmall,
+} from "./Hero.styled";
+import {
+  Container,
+  HomeWrapper,
+  ImgWrapper,
+} from "../../pages/Home/Home.styled";
 const Hero: React.FC = () => {
   const settings = {
     dots: true,
@@ -34,20 +46,30 @@ const Hero: React.FC = () => {
     ),
   };
   return (
-    <div>
-      <h1>Hero</h1>
-      <Slider {...settings}>
-        <div>
-          <img src={heroImageOne} alt="" />
-        </div>
-        <div>
-          <img src={heroImageTwo} alt="" />
-        </div>
-        <div>
-          <img src={heroImageThree} alt="" />
-        </div>
-      </Slider>
-    </div>
+    <HomeWrapper>
+      <Container>
+        <HeroTitleDiv>
+          <HeroTitleSmall>The space is waiting for</HeroTitleSmall>
+          <HeroTitleLarge> YOU</HeroTitleLarge>
+          <HeroTextLink href="#flightbar">
+            <p>Explore tours</p>
+            <img src={arrowDown} alt="" />
+          </HeroTextLink>
+        </HeroTitleDiv>
+
+        <Slider {...settings}>
+          <ImgWrapper>
+            <img src={heroImageOne} alt="" />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img src={heroImageTwo} alt="" />
+          </ImgWrapper>
+          <ImgWrapper>
+            <img src={heroImageThree} alt="" />
+          </ImgWrapper>
+        </Slider>
+      </Container>
+    </HomeWrapper>
   );
 };
 export default Hero;

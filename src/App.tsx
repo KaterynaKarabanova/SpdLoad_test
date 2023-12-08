@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-// import logo from "./logo.svg";
 import "./App.css";
 const Layout = lazy(() => import("./components/Layout/Layout"));
 const Home = lazy(() => import("./pages/Home/Home"));

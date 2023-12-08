@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const CustomDotsList = styled.ul`
   position: absolute;
-  bottom: 0px;
+  bottom: -60px;
   display: block;
   width: 100%;
   padding: 0;
@@ -45,8 +45,8 @@ export const CustomDotsList = styled.ul`
         font-size: 50px; /* Adjusts the dot size */
         line-height: 20px;
         position: absolute;
-        top: 2.5px;
-        left: 2px;
+        top: -1.5px;
+        left: 1.7px;
         width: 20px;
         height: 20px;
         content: "•"; /* Dot symbol */
@@ -56,4 +56,45 @@ export const CustomDotsList = styled.ul`
       }
     }
   }
+`;
+export const FlightBarWrapper = styled.div`
+  padding: 96px 80px 136px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+`;
+export const FlightBarTitle = styled.h2`
+  color: #1e1e1e;
+  text-align: left;
+  font-family: Syne;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+`;
+export const ArrowDivNext = styled.div`
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  top: -75px;
+  right: 15px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ececec;
+`;
+export const ArrowDivPrev = styled(ArrowDivNext)`
+  right: 70px;
+`;
+export const ErrorText = styled.p`
+  text-align: center;
+  font-family: Syne;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 `;

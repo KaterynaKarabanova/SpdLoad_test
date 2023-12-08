@@ -4,6 +4,14 @@ import heart from "../assets/Heart.svg";
 import heartFav from "../assets/HeartFav.svg";
 import { useRecoilState } from "recoil";
 import { favourite } from "../../recoil/atoms";
+import {
+  CardBtnDiv,
+  CardBuyBtn,
+  CardDiv,
+  CardFavBtn,
+  CardText,
+  CardTitle,
+} from "./FlightCard.styled";
 interface FlightCardProps {
   id: string;
   name: number;
@@ -37,26 +45,26 @@ const FlightCard: React.FC<FlightCardProps> = ({
   };
 
   return (
-    <div id={id}>
+    <CardDiv id={id}>
       <img src={img} alt="" />
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <div>
-        <button>BUY</button>
+      <CardTitle>{name}</CardTitle>
+      <CardText>{description}</CardText>
+      <CardBtnDiv>
+        <CardBuyBtn>BUY</CardBuyBtn>
         {window.location.href.includes("/favorites") ? (
-          <button onClick={deleteFromFav}>
+          <CardFavBtn onClick={deleteFromFav}>
             <img src={deleted} alt="" />
-          </button>
+          </CardFavBtn>
         ) : (
-          <button onClick={addToFav}>
+          <CardFavBtn onClick={addToFav}>
             <img
               src={state.find((el) => el.id === id) ? heartFav : heart}
               alt="heart"
             />
-          </button>
+          </CardFavBtn>
         )}
-      </div>
-    </div>
+      </CardBtnDiv>
+    </CardDiv>
   );
 };
 export default FlightCard;
