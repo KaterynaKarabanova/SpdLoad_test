@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/SpdLoad_test/static/css/main.f855e6bc.css",
-    "main.js": "/SpdLoad_test/static/js/main.03a9012a.js",
+    "main.js": "/SpdLoad_test/static/js/main.9d932a00.js",
     "static/js/543.357e178d.chunk.js": "/SpdLoad_test/static/js/543.357e178d.chunk.js",
     "static/css/554.dae13275.chunk.css": "/SpdLoad_test/static/css/554.dae13275.chunk.css",
-    "static/js/554.2b376b4d.chunk.js": "/SpdLoad_test/static/js/554.2b376b4d.chunk.js",
+    "static/js/554.dc0f1aaa.chunk.js": "/SpdLoad_test/static/js/554.dc0f1aaa.chunk.js",
     "static/js/960.28db11aa.chunk.js": "/SpdLoad_test/static/js/960.28db11aa.chunk.js",
     "static/js/787.12f2b0b2.chunk.js": "/SpdLoad_test/static/js/787.12f2b0b2.chunk.js",
     "static/js/756.61dda6ad.chunk.js": "/SpdLoad_test/static/js/756.61dda6ad.chunk.js",
@@ -24,16 +24,16 @@
     "static/media/arrowLeft.svg": "/SpdLoad_test/static/media/arrowLeft.a2358bf723e75abda3cf8fd91c09707b.svg",
     "static/media/arrowRight.svg": "/SpdLoad_test/static/media/arrowRight.760f0af79460491a18260e81bd9895b3.svg",
     "main.f855e6bc.css.map": "/SpdLoad_test/static/css/main.f855e6bc.css.map",
-    "main.03a9012a.js.map": "/SpdLoad_test/static/js/main.03a9012a.js.map",
+    "main.9d932a00.js.map": "/SpdLoad_test/static/js/main.9d932a00.js.map",
     "543.357e178d.chunk.js.map": "/SpdLoad_test/static/js/543.357e178d.chunk.js.map",
     "554.dae13275.chunk.css.map": "/SpdLoad_test/static/css/554.dae13275.chunk.css.map",
-    "554.2b376b4d.chunk.js.map": "/SpdLoad_test/static/js/554.2b376b4d.chunk.js.map",
+    "554.dc0f1aaa.chunk.js.map": "/SpdLoad_test/static/js/554.dc0f1aaa.chunk.js.map",
     "960.28db11aa.chunk.js.map": "/SpdLoad_test/static/js/960.28db11aa.chunk.js.map",
     "787.12f2b0b2.chunk.js.map": "/SpdLoad_test/static/js/787.12f2b0b2.chunk.js.map",
     "756.61dda6ad.chunk.js.map": "/SpdLoad_test/static/js/756.61dda6ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.03a9012a.js"
+    "static/js/main.9d932a00.js"
   ]
 }
