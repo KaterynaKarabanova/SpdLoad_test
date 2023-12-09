@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navigation from "./Navigation";
 import { Suspense } from "react";
 import logo from "../assets/logo.jpg";
+import { NavLink } from "react-router-dom";
 import {
   LayoutFlex,
   LayoutHeader,
@@ -17,9 +18,9 @@ const Layout = () => {
       <LayoutHeaderBack>
         <Container>
           <LayoutHeader>
-            <a href="/">
+            <NavLink key={"/"} to={"/"}>
               <img src={logo} alt="" />
-            </a>
+            </NavLink>
             <Navigation />
             <LayoutFlex>
               <StyledFavLink

@@ -11,7 +11,9 @@ h6,
 p {
   margin: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
   margin: 0;
   padding: 0;

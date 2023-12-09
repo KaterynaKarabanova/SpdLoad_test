@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import deleted from "../assets/Delete.svg";
 import heart from "../assets/Heart.svg";
 import heartFav from "../assets/HeartFav.svg";
@@ -26,6 +26,10 @@ const FlightCard: React.FC<FlightCardProps> = ({
 }) => {
   const [state, setState] = useRecoilState(favourite);
 
+  useEffect(() => {
+    localStorage.setItem("Favourites", JSON.stringify(state));
+  }, [state]);
+
   const addToFav = (): void => {
     if (state.find((el) => el.id === id)) {
       deleteFromFav();
@@ -39,6 +43,7 @@ const FlightCard: React.FC<FlightCardProps> = ({
     };
     setState((prev) => [...prev, newRocket]);
   };
+
   const deleteFromFav = (): void => {
     const newState = state.filter((el) => el.id !== id);
     setState(newState);

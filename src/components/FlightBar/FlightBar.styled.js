@@ -68,9 +68,7 @@ export const FlightBarTitle = styled.h2`
   text-align: left;
   font-family: Syne;
   font-size: 32px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
 `;
 export const ArrowDivNext = styled.div`
@@ -85,6 +83,11 @@ export const ArrowDivNext = styled.div`
   align-items: center;
   gap: 10px;
   background: #ececec;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 2px solid black;
+  }
 `;
 export const ArrowDivPrev = styled(ArrowDivNext)`
   right: 70px;
@@ -93,8 +96,6 @@ export const ErrorText = styled.p`
   text-align: center;
   font-family: Syne;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
 `;

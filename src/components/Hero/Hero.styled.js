@@ -14,7 +14,7 @@ export const CustomDotsListHero = styled(CustomDotsList)`
       border: 1px solid white;
       &::before {
         color: transparent;
-        top: -1.5px;
+        top: -1.8px;
         left: 1.8px;
       }
     }
@@ -31,9 +31,7 @@ export const HeroTitleSmall = styled.h2`
   text-align: center;
   font-family: Syne;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -55,7 +53,5 @@ export const HeroTextLink = styled.a`
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Lato;
   font-size: 32px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 `;

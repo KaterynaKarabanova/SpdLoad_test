@@ -7,32 +7,31 @@ export const StyledNsvLink = styled(NavLink)`
   text-align: center;
   font-family: Lato;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
   &.active {
     &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: #fff;
-      display: block;
-      position: absolute;
-      bottom: -5px;
+      opacity: 1;
     }
   }
   &:hover:not(.active) {
     &::after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background-color: lightgrey;
-      display: block;
-      position: absolute;
-      bottom: -5px;
+      background-color: lightgray;
+      opacity: 1;
     }
   }
 `;
@@ -47,15 +46,16 @@ export const StyledFavLink = styled(NavLink)`
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
+  transition: background-color 0.3s ease;
   &.active {
-    background: #dd377d;
+    background-color: #dd377d;
     background-image: url(${heartFav});
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
   }
   &:hover:not(.active) {
-    background: #dd377d;
+    background-color: #dd377d;
     background-image: url(${heartFav});
     background-repeat: no-repeat;
     background-size: 50%;

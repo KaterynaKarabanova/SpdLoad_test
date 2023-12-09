@@ -12,7 +12,7 @@ export const LayoutHeaderBack = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
 `;
 export const LayoutFlex = styled.div`
@@ -36,10 +36,11 @@ export const LayoutSignButton = styled.button`
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
   &:hover {
-    background: #7fc2ff;
+    background-color: #7fc2ff;
   }
   &:focus {
-    background: #7fc2ff;
+    background-color: #7fc2ff;
   }
 `;

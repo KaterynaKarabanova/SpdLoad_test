@@ -9,9 +9,7 @@ export const CardTitle = styled.h3`
   text-align: center;
   font-family: Syne;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   text-transform: uppercase;
   margin: 32px 0 16px 0;
 `;
@@ -20,9 +18,7 @@ export const CardText = styled.p`
   text-align: center;
   font-family: Lato;
   font-size: 24px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
   padding: 0 32px;
   height: 58px;
   overflow-y: scroll;
@@ -50,10 +46,15 @@ export const CardBuyBtn = styled.button`
   text-align: center;
   font-family: Syne;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #7fc2ff;
+  }
+  &:focus {
+    background-color: #7fc2ff;
+  }
 `;
 export const CardFavBtn = styled.button`
   display: flex;
@@ -61,7 +62,11 @@ export const CardFavBtn = styled.button`
   height: 53px;
   justify-content: center;
   align-items: center;
-  background: #ececec;
+  background-color: #ececec;
   border: none;
   outline: none;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #f9ff8d;
+  }
 `;

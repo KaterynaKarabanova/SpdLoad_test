@@ -30,7 +30,6 @@ const FlightBar: React.FC = () => {
     }
   `;
   const { loading, error, data } = useQuery(GET_BOOKS);
-  console.log(data);
 
   useEffect(() => {
     if (!loading && !error) {

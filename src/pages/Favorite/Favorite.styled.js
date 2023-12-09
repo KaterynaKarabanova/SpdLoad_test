@@ -20,13 +20,14 @@ export const FavClearBtn = styled.button`
   line-height: normal;
   background-color: transparent;
   outline: none;
-  border: none;
   position: absolute;
   top: 60px;
-  right: 80px;
+  right: 90px;
+  transition: all 0.3s ease;
   &:hover {
-    color: black;
-    font-weight: 600;
+    color: white;
+
+    background-color: black;
   }
 `;
 export const FavBanner = styled.div`
@@ -36,9 +37,7 @@ export const FavBanner = styled.div`
   text-align: center;
   font-family: Syne;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
@@ -59,9 +58,7 @@ export const FavouriteTitle = styled.h2`
   text-align: center;
   font-family: Syne;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
   z-index: 3;
   position: absolute;
